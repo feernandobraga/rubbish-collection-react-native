@@ -2,7 +2,7 @@ import React from "react";
 import { AppLoading } from "expo";
 import { StatusBar } from "react-native";
 import { StyleSheet, Text, View } from "react-native";
-import Home from "./src/pages/Home";
+import Routes from "./src/routes";
 import { Ubuntu_700Bold, useFonts } from "@expo-google-fonts/ubuntu";
 import { Roboto_400Regular, Roboto_500Medium } from "@expo-google-fonts/roboto";
 
@@ -17,10 +17,11 @@ export default function App() {
     return <AppLoading />;
   }
 
+  // the <> component in the return statement can be used to replace a <View />
   return (
     <>
       <StatusBar barStyle="dark-content" translucent />
-      <Home />
+      <Routes />
     </>
   );
 }
